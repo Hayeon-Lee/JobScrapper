@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 </head>
 <body>
-  <h1>Search Results for: "{{keyword}}"</h1>
+  <hgroup>
+    <h1>Search Results for: "{{keyword}}"</h1>
+    <a target="_blank" href="/export?keyword={{keyword}}">Export to file</a>
+  </hgroup>
   <main>
     <figure>
       <table role="grid">
@@ -31,7 +34,7 @@
           {% endfor %}
         </tbody>
       </table>
-  </figure>
+    </figure>
   </main>
 </body>
 </html>
